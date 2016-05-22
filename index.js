@@ -19,9 +19,14 @@ fs.readFile('users.json', {encoding: 'utf8'}, function (err, data) {
 // Anytime we render something with an hbs extension, use the engines.handlebars object
 app.engine('hbs', engines.handlebars);
 
-app.set('views', './lesson-3/views');
+app.set('views', './views');
 // Set the default templating engine
 app.set('view engine', 'hbs');
+
+// allows us to serve static files from a directory
+// app.use(express.static('images'))
+// any urls referencing `/profilepics` will resolve to images
+app.use('/profilepics', express.static('images'))
 
 app.get('/', (req, res) => {
   // index will map to index.jade or whatever index file type we have specified in the view engine
@@ -29,12 +34,7 @@ app.get('/', (req, res) => {
   res.render('index', { users: users });
 })
 
-// using regex
-app.get(/black.*/, (req, res, next) => {
-  console.log('BLACK USER ACCESS')
-  // next calls the next route handler - app.get('/:username')
-  next()
-})
+
 // ":" tells express that `username` is a path variable
 // /:username could be domain/anything
 app.get('/:username', (req, res) => {
@@ -42,7 +42,8 @@ app.get('/:username', (req, res) => {
   // req.params is given a username key - takes that name from the placeholder above and a property being the actual name of the url parameter
   // req.params = {username: the url parameter}
   const username = req.params.username;
-  res.send(username);
+  console.log(username)
+  res.render('user', { username: username })
 })
 
 var server = app.listen(7200, () => {
