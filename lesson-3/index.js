@@ -14,13 +14,18 @@ fs.readFile('users.json', {encoding: 'utf8'}, function (err, data) {
     users.push(user)
   })
 
-})
+});
+
+// Anytime we render something with an hbs extension, use the engines.handlebars object
+app.engine('hbs', engines.handlebars);
 
 app.set('views', './lesson-3/views');
-app.set('view engine', 'jade');
+// Set the default templating engine
+app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
   // index will map to index.jade or whatever index file type we have specified in the view engine
+  // we could specifically reference index.jade by typing that instead
   res.render('index', { users: users });
 })
 
