@@ -17,6 +17,7 @@
     "lodash": "^4.12.0"
   },
   "devDependencies": {
+    "body-parser": "^1.15.1",
     "nodemon": "^1.9.2"
   }
 }

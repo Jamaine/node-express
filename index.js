@@ -1,8 +1,14 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
+const path = require('path');
 const _ = require('lodash');
 const engines = require('consolidate');
+const bodyParser = require('body-parser');
+
+function getUserFilePath(username) {
+  return path.join(__dirname, 'users', username) + '.json';
+}
 
 var users = [];
 
@@ -38,14 +44,16 @@ app.get('/', (req, res) => {
 // ":" tells express that `username` is a path variable
 // /:username could be domain/anything
 app.get('/:username', (req, res) => {
-  console.log(req.params)
-  // req.params is given a username key - takes that name from the placeholder above and a property being the actual name of the url parameter
-  // req.params = {username: the url parameter}
   const username = req.params.username;
-  console.log(username)
-  res.render('user', { username: username })
+  const user = getUser(username);
+  // The file user.hbs
+  // Properties we want to be availble to the view
+  res.render('user', {
+    user: user,
+    address: user.location
+  })
 })
 
 var server = app.listen(7200, () => {
-  console.log('Server running at http://localhost:' + server.address().port)
+  console.log('Server running at http://localhost:' + server.address().port);
 });
