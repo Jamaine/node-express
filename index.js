@@ -42,7 +42,7 @@ app.get('/:username', (req, res) => {
   // req.params is given a username key - takes that name from the placeholder above and a property being the actual name of the url parameter
   // req.params = {username: the url parameter}
   const username = req.params.username;
-  console.log(username)
+  console.log(username);
   res.render('user', { username: username })
 })
 
