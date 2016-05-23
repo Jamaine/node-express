@@ -11,7 +11,7 @@ fs.readFile('users.json', {encoding: 'utf8'}, function (err, data) {
   JSON.parse(data).forEach(function (user) {
     user.name.full = _.startCase(user.name.first + ' ' + user.name.last)
     users.push(user)
-  })
+  });
 
 })
 
