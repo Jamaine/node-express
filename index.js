@@ -53,8 +53,9 @@ app.get('*.json', (request, response) => {
 // useful for creating an api server
 app.get('/data/:username', (request, response) => {
   const username = request.params.username;
-  const user = helpers.getUser(username);
-  response.json(user);
+  const readable = fs.createReadStream(`./users/${username}.json`);
+  // take data from readable and pipe it to the response
+  readable.pipe(response);
 });
 
 const userRouter = require('./username');
