@@ -5,13 +5,13 @@ const fs = require('fs');
 const router = express.Router({
   mergeParams: true
 })
-
-router.all('/', (req, res, next) => {
-  console.log(req.method, 'for', req.params.username);
+// .use without mount path fires for every request the router handles
+router.use((req, res, next) => {
+  console.log(req.method, 'for', req.params.username, `at ${req.path}`);
   next();
 })
 
-router.get('/', helpers.verifyUser, (req, res) => {
+router.get('/', (req, res) => {
   const username = req.params.username;
   const user = helpers.getUser(username);
   // The file user.hbs
@@ -21,6 +21,13 @@ router.get('/', helpers.verifyUser, (req, res) => {
     address: user.location
   });
 });
+
+// if the callback has 4 arguments, the first is error
+// type an incorrect username to test - http://localhost:7200/bigkoala328r
+router.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('something broke')
+})
 
 // makes it easier to define subpaths as shown here
 router.get('/edit', (req, res) => {
