@@ -5,10 +5,8 @@ const path = require('path');
 const _ = require('lodash');
 const engines = require('consolidate');
 const bodyParser = require('body-parser');
-const helpers = require('./helpers');
+const JSONStream = require('JSONStream');
 
-
-console.log(helpers.getUser)
 
 // Anytime we render something with an hbs extension, use the engines.handlebars object
 app.engine('hbs', engines.handlebars);
@@ -57,6 +55,19 @@ app.get('/data/:username', (request, response) => {
   // take data from readable and pipe it to the response
   readable.pipe(response);
 });
+
+app.get('/users/by/:gender', (request, response) => {
+  const gender = request.params.gender;
+  const readable = fs.createReadStream('users.json');
+
+  readable
+    // * everything in the file
+    .pipe(JSONStream.parse('*', (user)=> {
+      if (user.gender === gender) return user.name.last
+    }))
+    .pipe(JSONStream.stringify('[\n ', ',\n', '\n]\n' ))
+    .pipe(response);
+})
 
 const userRouter = require('./username');
 app.use('/:username', userRouter);
