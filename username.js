@@ -1,6 +1,9 @@
 const express = require('express');
 const helpers = require('./helpers');
 const fs = require('fs');
+
+const User = require('./db').User
+
 //  create our own instance of a Router
 const router = express.Router({
   mergeParams: true
@@ -13,12 +16,13 @@ router.use((req, res, next) => {
 
 router.get('/', (req, res) => {
   const username = req.params.username;
-  const user = helpers.getUser(username);
-  // The file user.hbs
-  // Properties we want to be availble to the view
-  res.render('user', {
-    user: user,
-    address: user.location
+  User.findOne({ username: username}, (err, user) => {
+    // The file user.hbs
+    // Properties we want to be availble to the view
+    res.render('user', {
+      user: user,
+      address: user.location
+    });
   });
 });
 
@@ -36,13 +40,9 @@ router.get('/edit', (req, res) => {
 
 router.put('/', (req, res) => {
   const username = req.params.username;
-  const user = helpers.getUser(username);
-  // data object which is passed back from the form
-  user.location = req.body;
-
-  helpers.saveUser(username, user);
-  // end the request
-  res.end();
+  User.findOneAndUpdate({ username: username }, { location: req.body }, (err, user) => {
+    res.end();
+  });
 });
 
 router.delete('/', (req, res) => {
