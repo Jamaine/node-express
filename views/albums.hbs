@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <img src=/albumpics/{{album.images.0.url}} alt={{album.artist}}>
+      <h3>{{album.name}}</h3>
+      <p>{{album.artist}}</p>
+      {{album.year}}
+    </header>
+    <ul>
+      {{#each album.tracks}}
+        <li>{{track_number}} - {{name}}</li>
+      {{/each}}
+    </ul>
+    <small>{{album.label}}</small>
+  </body>
+</html>

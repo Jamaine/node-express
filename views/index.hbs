@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      {{#each albums}}
+        <li>
+          <img src=/albumpics/{{images.0.url}} alt="">
+          <a href=/albums/{{id}}>{{name}}</a>
+        </li>
+      {{/each}}
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+[
+  {
+    "name": "We got it from Here... Thank You 4 Your Service",
+    "artist": "A Tribe Called Quest",
+    "year": 2016,
+    "rating": "pending",
+    "id": "atcq",
+    "images": [
+      {
+        "height": 64,
+        "width": 64,
+        "url": "atcq-wgifh-s.jpeg"
+      },
+      {
+        "height": 600,
+        "width": 600,
+        "url": "atcq-wgifh-l.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "good kid, m.A.A.d city",
+    "artist": "Kendrick Lamar",
+    "year": 2012,
+    "label": "Aftermath/Interscope Records",
+    "rating": 4,
+    "id": "kendricklamar",
+    "images": [
+      {
+        "height": 64,
+        "width": 64,
+        "url": "kl-gkmc-s.jpg"
+      },
+      {
+        "height": 600,
+        "width": 600,
+        "url": "kl-gkmc-l.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Change It All",
+    "artist": "Goapele",
+    "year": 2016,
+    "label": "Epic records, a division of Sony Music Entertainment",
+    "rating": 5,
+    "id": "goaple",
+    "images": [
+      {
+        "height": 64,
+        "width": 64,
+        "url": "g-cia-s.jpg"
+      },
+      {
+        "height": 600,
+        "width": 600,
+        "url": "g-cia-l.jpg"
+      }
+    ]
+  }
+]
