@@ -5,22 +5,23 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "l-1": "nodemon ./lesson-1/index.js",
-    "l-2": "nodemon ./lesson-2/index.js",
-    "l-3": "nodemon ./lesson-3/index.js",
-    "l-4": "nodemon ./lesson-4/index.js"
+    "dev": "nodemon index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jamaine/node-express.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jamaine/node-express/issues"
+  },
+  "homepage": "https://github.com/Jamaine/node-express#readme",
   "dependencies": {
-    "consolidate": "^0.14.1",
-    "express": "^4.13.4",
-    "handlebars": "^4.0.5",
-    "jade": "^1.11.0",
-    "lodash": "^4.12.0"
+    "express": "^4.15.2"
   },
   "devDependencies": {
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.11.0"
   }
 }
