@@ -1,14 +1,27 @@
 const express = require('express');
 // creates a new instance of an express app.
 const app = express();
+const fs = require('fs');
+const _ = require('lodash');
 
-// when express gets an http 'GET' request to the root path, call this function
-app.get('/', (request, result) => {
-  result.send('Hello, World')
+const users = [];
+
+fs.readFile('users.json', { encoding: 'utf8' }, (err, data) => {
+  if (err) throw err;
+
+  JSON.parse(data).forEach(user => {
+    user.name.full = _.startCase(`${user.name.first} ${user.name.last}`);
+    users.push(user)
+  })
 })
 
-app.get('/yo', (req, res) => {
-  res.send('YO!')
+// when express gets an http 'GET' request to the root path, call this function
+app.get('/', (request, res) => {
+  const buffer = users.reduce((acc, user) => {
+    acc += `${user.name.full}<br>`
+    return acc;
+  }, '');
+  res.send(buffer)
 })
 
 // starts application
