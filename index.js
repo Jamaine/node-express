@@ -16,12 +16,22 @@ fs.readFile('users.json', { encoding: 'utf8' }, (err, data) => {
 })
 
 // when express gets an http 'GET' request to the root path, call this function
-app.get('/', (request, res) => {
-  const buffer = users.reduce((acc, user) => {
-    acc += `${user.name.full}<br>`
-    return acc;
-  }, '');
-  res.send(buffer)
+app.get('/', (req, res) => {
+  // create a list of users from the array of users
+  const userList = users.reduce((list, user) => (
+    list += `<a href="/${user.username}">${user.name.full}</a><br>`
+  ), '');
+  // prints it to the page
+  res.send(userList)
+})
+
+// : indicates the following text is a path variable, whatever the pathename is from request.params.username in this case
+// /:username adds username to req.params object, witha property of the variable pathename
+// /:username /skinout = req.params = { username: 'skinout' }
+app.get('/:username', (req, res) => {
+  console.log(req.params);
+  const username = req.params.username;
+  res.send(username)
 })
 
 // starts application

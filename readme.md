@@ -2,8 +2,18 @@
 `app.listen()`
 Starts application
 
-`app.get()`
+`app.get(path, (request, result, next))`
+* `next` this route handler is done, move onto the next route handler
 
+`app.get('/:pathname')`
+* `:` indicates the following text is a path variable, whatever the pathname is from request.params.username in this case
+* `/:username` adds username to req.params object, with a property of the variable pathname
+* /:username /skinout = `req.params = { username: 'skinout' }`
+
+
+`res.send()`
+* sends the result to the browser
+* request is over and nothing else will run
 
 ### Devtools
 * nodemon
