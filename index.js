@@ -15,24 +15,30 @@ fs.readFile('users.json', { encoding: 'utf8' }, (err, data) => {
   })
 })
 
+// adds support for template engines
+//  when rendering a view look in the view directory
+app.set('views', './views')
+//  use the jade view engine
+app.set('view engine', 'jade')
+
 // when express gets an http 'GET' request to the root path, call this function
 app.get('/', (req, res) => {
-  // create a list of users from the array of users
-  const userList = users.reduce((list, user) => (
-    list += `<a href="/${user.username}">${user.name.full}</a><br>`
-  ), '');
-  // prints it to the page
-  res.send(userList)
+  res.render('index', { users: users })
 })
 
-// : indicates the following text is a path variable, whatever the pathename is from request.params.username in this case
-// /:username adds username to req.params object, witha property of the variable pathename
-// /:username /skinout = req.params = { username: 'skinout' }
+app.get(/big.*/, (req, res, next) => {
+  console.log('big user access');
+  next();
+})
+
+
 app.get('/:username', (req, res) => {
   console.log(req.params);
   const username = req.params.username;
   res.send(username)
 })
+
+
 
 // starts application
 // app.listen(7100)
