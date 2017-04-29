@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 const _ = require('lodash');
+const engines = require('consolidate')
 
 const users = [];
 
@@ -15,14 +16,23 @@ fs.readFile('users.json', { encoding: 'utf8' }, (err, data) => {
   })
 })
 
+//  whenever express is asked to render anything with an hbs extension, use engines.handlebars
+app.engine('hbs', engines.handlebars)
+
 // adds support for template engines
 //  when rendering a view look in the view directory
 app.set('views', './views')
 //  use the jade view engine
-app.set('view engine', 'jade')
+// app.set('view engine', 'jade')
+// use handlebars view engine
+app.set('view engine', 'hbs')
 
 // when express gets an http 'GET' request to the root path, call this function
 app.get('/', (req, res) => {
+  // render the index view file
+  // we can pass it an object, which is accessible within the view
+  // by default 'index' is whatever the engine is which we have chosen, however we could explicitly add the extension
+  // which would override this - res.render('index.jade', { users: users })
   res.render('index', { users: users })
 })
 
@@ -33,7 +43,7 @@ app.get(/big.*/, (req, res, next) => {
 
 
 app.get('/:username', (req, res) => {
-  console.log(req.params);
+  console.log('req.params', req.params);
   const username = req.params.username;
   res.send(username)
 })
