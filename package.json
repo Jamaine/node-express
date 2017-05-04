@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "l-1": "nodemon ./lesson-1/index.js",
-    "l-2": "nodemon ./lesson-2/index.js",
-    "l-3": "nodemon ./lesson-3/index.js",
-    "l-4": "nodemon ./lesson-4/index.js"
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
