@@ -10,6 +10,8 @@ Starts application
 * `/:username` adds username to req.params object, with a property of the variable pathname
 * /:username /skinout = `req.params = { username: 'skinout' }`
 
+`app.set('view engine', 'hbs')`
+* use handlebars view engine
 
 `res.send()`
 * sends the result to the browser
