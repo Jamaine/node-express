@@ -13,6 +13,18 @@ Starts application
 `app.set('view engine', 'hbs')`
 * use handlebars view engine
 
+
+`app.use(path, callback)`
+* https://expressjs.com/en/api.html#app.use
+* Mounts the specified middleware function or functions at the specified path: the middleware function is executed when the base of the requested path matches path.
+* takes an optional path, as a string, regex, or array of either
+
+`app.use(path, express.static('images'))`
+* serves static files from the directory `images`
+  * `<img src="{{user.username}}_sm.jpg" alt="">` will look in the images folder for the images
+* If a path is defined, you can prefix your paths
+  * `<img src="{{/profilepics/user.username}}_sm.jpg" alt="">` will still look in the images folder for the images
+
 `res.send()`
 * sends the result to the browser
 * request is over and nothing else will run

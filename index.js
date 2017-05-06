@@ -27,6 +27,9 @@ app.set('views', './views')
 // use handlebars view engine
 app.set('view engine', 'hbs')
 
+// app.use(express.static('images'))
+app.use('/profilepics', express.static('images'))
+
 // when express gets an http 'GET' request to the root path, call this function
 app.get('/', (req, res) => {
   // render the index view file
@@ -36,16 +39,11 @@ app.get('/', (req, res) => {
   res.render('index', { users: users })
 })
 
-app.get(/big.*/, (req, res, next) => {
-  console.log('big user access');
-  next();
-})
 
 
 app.get('/:username', (req, res) => {
-  console.log('req.params', req.params);
   const username = req.params.username;
-  res.send(username)
+  res.render('user', { username })
 })
 
 
