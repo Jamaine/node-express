@@ -34,7 +34,7 @@ Starts application
 * Renders a view and send the resulting html string to the client
 * we can pass it an object, which is accessible within the view
 * by default 'index' is whatever the engine is which we have chosen, however we could explicitly add the extension
-* which would override this - res.render('index.jade', { users: users })
+* which would override this - `res.render('index.jade', { users: users })`
 
 
 `app.engine(ext, callback)`
@@ -42,6 +42,10 @@ Starts application
 * use this for engines which do not support express out of the box
 * for templates which are compatible with the `consolidate` library, you can use the below, where `engines` = `consolidate`
   * `app.engine('hbs', engines.handlebars)`
+
+
+### [fs.readdir()](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)
+* reads the contents of a directory
 
 ### Devtools
 * nodemon

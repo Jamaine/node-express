@@ -6,7 +6,6 @@ const startCase = require('lodash/startCase')
 const engines = require('consolidate')
 const path = require('path');
 const bodyParser = require('body-parser');
-const users = [];
 
 const getUserFilePath = username => {
   const filePath = path.join(__dirname, 'users', username);
@@ -31,15 +30,6 @@ const saveUser = (username, data) => {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2), { encoding: 'utf8' })
 }
 
-fs.readFile('users.json', { encoding: 'utf8' }, (err, data) => {
-  if (err) throw err;
-
-  JSON.parse(data).forEach(user => {
-    user.name.full = startCase(`${user.name.first} ${user.name.last}`);
-    users.push(user)
-  })
-})
-
 //  whenever express is asked to render anything with an hbs extension, use engines.handlebars
 app.engine('hbs', engines.handlebars)
 
@@ -58,16 +48,32 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 // when express gets an http 'GET' request to the root path, call this function
 app.get('/', (req, res) => {
-  // render the index view file
-  // we can pass it an object, which is accessible within the view
-  // by default 'index' is whatever the engine is which we have chosen, however we could explicitly add the extension
-  // which would override this - res.render('index.jade', { users: users })
-  res.render('index', { users: users })
+  const users = [];
+  // read the users directory
+  fs.readdir('users', (err, files) => {
+    // files is an array of the files in the directory
+    files.forEach((file) => {
+      // read each file
+      fs.readFile(path.join(__dirname, 'users', file), 'utf8', (err, data) => {
+        const user = JSON.parse(data)
+        const { first, last } = user.name
+        user.name.full = startCase(`${first} ${last}`)
+        users.push(user)
+        if (users.length === files.length) {
+          res.render('index', { users })
+        }
+      })
+    })
+  })
+})
+
+app.get('/favicon.ico', (req, res) => {
+  res.send(204)
 })
 
 
-
 app.get('/:username', (req, res) => {
+  console.log(req.params);
   const user = getUser(req.params.username);
   res.render('user', { user, address: user.location })
 })
@@ -79,6 +85,14 @@ app.put('/:username', (req, res) => {
   user.location = req.body;
   saveUser(username, user)
   res.end()
+})
+
+app.delete('/:username', (req, res) => {
+  const fp = getUserFilePath(req.params.username);
+  // delete file
+  fs.unlinkSync(fp);
+  // sends a 200 status to let the client know the request completed successfully
+  res.sendStatus(200);
 })
 
 
