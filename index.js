@@ -30,6 +30,18 @@ const saveUser = (username, data) => {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2), { encoding: 'utf8' })
 }
 
+const verifyUser = (req, res, next) => {
+  const user = req.params.username
+  const fp = getUserFilePath(user)
+  //  if file exists
+  const exists = fs.existsSync(fp)
+  if (exists) {
+    next()
+  } else {
+    res.redirect(`/error/${user}`)
+  }
+}
+
 //  whenever express is asked to render anything with an hbs extension, use engines.handlebars
 app.engine('hbs', engines.handlebars)
 
@@ -71,11 +83,30 @@ app.get('/favicon.ico', (req, res) => {
   res.send(204)
 })
 
+app.get('*.json', (req, res) => {
+  res.download(`./users/${req.path}`)
+})
 
-app.get('/:username', (req, res) => {
+app.get('/data/:username', (req, res) => {
+  const username = req.params.username;
+  const user = getUser(username);
+  res.json(user)
+})
+
+app.all('/:username', (req, res, next) => {
+  console.log(req.method, 'for', req.params.username);
+  next()
+})
+
+app.get('/:username', verifyUser, (req, res) => {
   console.log(req.params);
   const user = getUser(req.params.username);
   res.render('user', { user, address: user.location })
+})
+
+app.get('/error/:username', (req, res) => {
+  res.status(404)
+    .send(`No user named ${req.params.username} found`)
 })
 
 app.put('/:username', (req, res) => {

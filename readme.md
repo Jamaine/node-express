@@ -13,6 +13,8 @@ Starts application
 `app.set('view engine', 'hbs')`
 * use handlebars view engine
 
+### app.all(pathname)
+* fires for any request to said pathname
 
 `app.use(path, callback)`
 * https://expressjs.com/en/api.html#app.use
@@ -37,6 +39,13 @@ Starts application
 * which would override this - `res.render('index.jade', { users: users })`
 
 
+### res.download(path, optionalCustomFileName)
+* trigger a download
+
+### [res.json(value)](https://expressjs.com/en/api.html#res.json)
+* sends a json response of the value
+* values can be of the types object, array, string, Boolean, or number, and you can also use it to convert other values to JSON, such as null, and undefined (although these are technically not valid JSON).
+
 `app.engine(ext, callback)`
 * https://expressjs.com/en/api.html#app.engine
 * use this for engines which do not support express out of the box
@@ -44,8 +53,12 @@ Starts application
   * `app.engine('hbs', engines.handlebars)`
 
 
-### [fs.readdir()](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)
+### [fs.readdir(filepath, (err, files))](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)
 * reads the contents of a directory
+* callback whereby files is an array of the files found
+
+### [fs.existsSync(filepath)](https://nodejs.org/api/fs.html#fs_fs_existssync_path)
+* checks if a file exists, returns boolean value
 
 ### Devtools
 * nodemon
