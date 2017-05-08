@@ -2,16 +2,40 @@ const express = require('express');
 // creates a new instance of an express app.
 const app = express();
 const fs = require('fs');
-const _ = require('lodash');
+const startCase = require('lodash/startCase')
 const engines = require('consolidate')
-
+const path = require('path');
+const bodyParser = require('body-parser');
 const users = [];
+
+const getUserFilePath = username => {
+  const filePath = path.join(__dirname, 'users', username);
+  return `${filePath}.json`;
+}
+
+const getUser = username => {
+  const user = JSON.parse(fs.readFileSync(getUserFilePath(username), { encoding: 'utf8' }));
+  const { first, last } = user.name;
+  user.name.full = startCase(`${first} ${last}`)
+  Object.keys(user.location).forEach(key => {
+    user.location[key] = startCase(user.location[key])
+  })
+  return user;
+}
+
+const saveUser = (username, data) => {
+  const filePath = getUserFilePath(username);
+  // deletes the file
+  fs.unlinkSync(filePath)
+  // writes the file
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), { encoding: 'utf8' })
+}
 
 fs.readFile('users.json', { encoding: 'utf8' }, (err, data) => {
   if (err) throw err;
 
   JSON.parse(data).forEach(user => {
-    user.name.full = _.startCase(`${user.name.first} ${user.name.last}`);
+    user.name.full = startCase(`${user.name.first} ${user.name.last}`);
     users.push(user)
   })
 })
@@ -30,6 +54,8 @@ app.set('view engine', 'hbs')
 // app.use(express.static('images'))
 app.use('/profilepics', express.static('images'))
 
+app.use(bodyParser.urlencoded({ extended: true }))
+
 // when express gets an http 'GET' request to the root path, call this function
 app.get('/', (req, res) => {
   // render the index view file
@@ -42,8 +68,17 @@ app.get('/', (req, res) => {
 
 
 app.get('/:username', (req, res) => {
-  const username = req.params.username;
-  res.render('user', { username })
+  const user = getUser(req.params.username);
+  res.render('user', { user, address: user.location })
+})
+
+app.put('/:username', (req, res) => {
+  const username = req.params.username
+  const user = getUser(username)
+  console.log(req.body);
+  user.location = req.body;
+  saveUser(username, user)
+  res.end()
 })
 
 
