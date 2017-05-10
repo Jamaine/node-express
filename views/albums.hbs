@@ -6,14 +6,15 @@
   </head>
   <body>
     <header>
-      <img src=/albumpics/{{album.images.0.url}} alt={{album.artist}}>
+      <img src={{album.images.1.url}} alt={{album.artist}}>
       <h3>{{album.name}}</h3>
-      <p>{{album.artist}}</p>
+      <p>{{album.simpleArtists}}</p>
       {{album.year}}
     </header>
     <ul>
-      {{#each album.tracks}}
-        <li>{{track_number}} - {{name}}</li>
+      {{#each album.simpleTracks}}
+        <li>{{track_number}} - {{track_name}}</li>
+        <li><input id="{{track_name}}" type="text" placeholder="{{track_name}}"></li>
       {{/each}}
     </ul>
     <small>{{album.label}}</small>

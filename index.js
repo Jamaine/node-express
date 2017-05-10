@@ -1,63 +1,64 @@
 const express = require('express');
-const _ = require('lodash');
-const fs = require('fs');
+const app = express();
 const engines = require('consolidate');
 const path = require('path');
+const fs = require('fs');
 
-const app = express();
+const getAlbumPath = albumName => {
+  fp = path.join(__dirname, 'albums', albumName);
+  return `${fp}.json`;
+}
 
-const albums = [];
+const getAlbumData = albumName => {
+  const album = JSON.parse(fs.readFileSync(getAlbumPath(albumName), 'utf8'));
+  album.simpleArtists = album.artists.reduce((artists, { name }) => (
+      artists += !artists.length ?
+      `${name}` :
+      `/ ${name}`
+  ), '')
+  album.simpleTracks = album.tracks.items.map(track => (
+    track = { track_name: track.name, track_number: track.track_number}
+  ))
+  return album
+}
 
-fs.readFile('albums.json', (error, data) => {
-  if (error) {
-    return console.error(error)
-  }
-  JSON.parse(data).forEach(album => {
-    albums.push(album)
-  });
-});
 
-app.engine('hbs', engines.handlebars);
+const saveAlbum = (albumName, data) => {
+  const path = getAlbumPath(albumName)
+  fs.unlinkSync(path)
+  fs.writeFileSync(path, JSON.stringify(data, null, 2), 'utf8')
+}
+
+app.engine('hbs', engines.handlebars)
 app.set('view engine', 'hbs');
-app.set('views', './views');
-// app.use(express.static('images'))
 app.use('/albumpics', express.static('images'))
 
-app.get('/', (request, response) => {
-  response.render('index', { albums: albums });
+
+
+
+
+app.get('/', (req, res) => {
+  fs.readdir(path.join(__dirname, 'albums'), (err, files) => {
+    const albums = files.map(file => (
+      JSON.parse(fs.readFileSync(path.join(__dirname, 'albums', file)), 'utf8')
+    ))
+    res.render('index', { albums })
+  })
 })
 
-function getAlbumFilePath(albums) {
-  return path.join(__dirname, 'albums', albums) + '.json';
-}
+app.get('/albums/:album', (req, res) => {
+  const album = getAlbumData(req.params.album)
+  res.render('albums', { album })
+})
 
-function verifyUser(request, response, next) {
-  const albumId = request.params.albumId
-  const albumPath = getAlbumFilePath(albumId);
-  fs.exists(albumPath, (yes) => {
-    if (yes) {
-      next();
-    } else {
-      response.redirect(`/error/${albumId}`);
-    }
-  });
-}
+app.put('/albums/:album', (req, res) => {
+  const albumName = req.params.album
+  const albumData = getAlbumData(albumName)
+  albumData.simpleTracks = req.body
+  saveAlbum(albumName, albumData)
 
-const getUser = (albumId) => {
-  return JSON.parse(fs.readFileSync(getAlbumFilePath(albumId), { encoding: 'utf-8' }));
-}
+})
 
-
-app.get('/albums/:albumId', verifyUser, (request, response) => {
-  const albumId = request.params.albumId;
-  const album = getUser(albumId);
-  response.render('albums', { album: album });
-});
-
-app.get('/error/:albumId', (request, response) => {
-  response.send(`there is no ${request.params.albumId}`);
-});
-
-const server = app.listen(3310, () => {
-  console.log(`listening on port` , server.address().port);
-});
+const server = app.listen('7100', () => {
+  console.log(`listening on localhost:${server.address().port}`)
+})

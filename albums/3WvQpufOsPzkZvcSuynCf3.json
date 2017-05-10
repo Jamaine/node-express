@@ -1,0 +1,456 @@
+{
+  "album_type" : "album",
+  "artists" : [ {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+    },
+    "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+    "id" : "09hVIj6vWgoCDtT03h8ZCa",
+    "name" : "A Tribe Called Quest",
+    "type" : "artist",
+    "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+  } ],
+  "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+  "copyrights" : [ {
+    "text" : "(P) 2016 Epic Records, a division of Sony Music Entertainment",
+    "type" : "P"
+  } ],
+  "external_ids" : {
+    "upc" : "886446074757"
+  },
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/album/3WvQpufOsPzkZvcSuynCf3"
+  },
+  "genres" : [ ],
+  "href" : "https://api.spotify.com/v1/albums/3WvQpufOsPzkZvcSuynCf3",
+  "id" : "3WvQpufOsPzkZvcSuynCf3",
+  "images" : [ {
+    "height" : 640,
+    "url" : "https://i.scdn.co/image/5a609c7f19aeda2908311276e35557eed15d0e26",
+    "width" : 640
+  }, {
+    "height" : 300,
+    "url" : "https://i.scdn.co/image/48c9c40e7f0a1190d9cd2785666185e45318b49a",
+    "width" : 300
+  }, {
+    "height" : 64,
+    "url" : "https://i.scdn.co/image/f38fa4b8a78b21f4e21ff56e23bdbe1457c53fd2",
+    "width" : 64
+  } ],
+  "label" : "Epic",
+  "name" : "We got it from Here... Thank You 4 Your service",
+  "popularity" : 68,
+  "release_date" : "2016-11-11",
+  "release_date_precision" : "day",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/albums/3WvQpufOsPzkZvcSuynCf3/tracks?offset=0&limit=50",
+    "items" : [ {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 341040,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/203xmWRHAyqwW6AkGkhhVM"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/203xmWRHAyqwW6AkGkhhVM",
+      "id" : "203xmWRHAyqwW6AkGkhhVM",
+      "name" : "The Space Program",
+      "preview_url" : "https://p.scdn.co/mp3-preview/1d89cf2c6a86318a54a9c5a2045057041ec19ef5?cid=null",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:203xmWRHAyqwW6AkGkhhVM"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 172013,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3wUX7HpXS382s1DHTRouVk"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3wUX7HpXS382s1DHTRouVk",
+      "id" : "3wUX7HpXS382s1DHTRouVk",
+      "name" : "We The People....",
+      "preview_url" : "https://p.scdn.co/mp3-preview/33d620e9e6fc1896f1c8bd6292b325f05030aad1?cid=null",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:3wUX7HpXS382s1DHTRouVk"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 172760,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3z40poMPmOkS6799tbXGKz"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3z40poMPmOkS6799tbXGKz",
+      "id" : "3z40poMPmOkS6799tbXGKz",
+      "name" : "Whateva Will Be",
+      "preview_url" : "https://p.scdn.co/mp3-preview/371c54f2ef2fbf257aaac57dc7dd590860a8b815?cid=null",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:3z40poMPmOkS6799tbXGKz"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 223346,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5OzOQRssjhxaBj0xd78Z2w"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5OzOQRssjhxaBj0xd78Z2w",
+      "id" : "5OzOQRssjhxaBj0xd78Z2w",
+      "name" : "Solid Wall of Sound",
+      "preview_url" : "https://p.scdn.co/mp3-preview/ccce28faaf46d7f9afb6e23d9174592f8cee5ad4?cid=null",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:5OzOQRssjhxaBj0xd78Z2w"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 213373,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2Pp3QD3thPnk2kCxmu2MHK"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2Pp3QD3thPnk2kCxmu2MHK",
+      "id" : "2Pp3QD3thPnk2kCxmu2MHK",
+      "name" : "Dis Generation",
+      "preview_url" : "https://p.scdn.co/mp3-preview/9a3db73fb0ce1bd568ea66c39cecfc1abde55f92?cid=null",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:2Pp3QD3thPnk2kCxmu2MHK"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 228480,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3awU4bBZTmisGbeJJ4xb3c"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3awU4bBZTmisGbeJJ4xb3c",
+      "id" : "3awU4bBZTmisGbeJJ4xb3c",
+      "name" : "Kids...",
+      "preview_url" : "https://p.scdn.co/mp3-preview/06e7d8b784d8da8b9c5933213943efb062b0adea?cid=null",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:3awU4bBZTmisGbeJJ4xb3c"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 284693,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/366xKgsZ8bFjIhG7JjfCkj"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/366xKgsZ8bFjIhG7JjfCkj",
+      "id" : "366xKgsZ8bFjIhG7JjfCkj",
+      "name" : "Melatonin",
+      "preview_url" : "https://p.scdn.co/mp3-preview/486c3ea3bdda791877d4d305a670ef3a6e6587d8?cid=null",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:366xKgsZ8bFjIhG7JjfCkj"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 200693,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1WvGWCDuj0dfRpuBuYecXp"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1WvGWCDuj0dfRpuBuYecXp",
+      "id" : "1WvGWCDuj0dfRpuBuYecXp",
+      "name" : "Enough!!",
+      "preview_url" : "https://p.scdn.co/mp3-preview/e36b57f70b491ef7f819d479996b2a583f4769e9?cid=null",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:1WvGWCDuj0dfRpuBuYecXp"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 171706,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0Zo2Sc9OLyAql82M85GI4J"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0Zo2Sc9OLyAql82M85GI4J",
+      "id" : "0Zo2Sc9OLyAql82M85GI4J",
+      "name" : "Mobius",
+      "preview_url" : "https://p.scdn.co/mp3-preview/bbd96d36c5c8aaa6936b7b7cad3f142d578932ce?cid=null",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:0Zo2Sc9OLyAql82M85GI4J"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 183586,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1qju0WsEHiDZoOBBDp8aAk"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1qju0WsEHiDZoOBBDp8aAk",
+      "id" : "1qju0WsEHiDZoOBBDp8aAk",
+      "name" : "Black Spasmodic",
+      "preview_url" : "https://p.scdn.co/mp3-preview/fbff28be66f1c9c50018b1dc3e718932fc84b3d0?cid=null",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:1qju0WsEHiDZoOBBDp8aAk"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 163933,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0ztZ65BrWKvcPuQPR6LTZw"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0ztZ65BrWKvcPuQPR6LTZw",
+      "id" : "0ztZ65BrWKvcPuQPR6LTZw",
+      "name" : "The Killing Season",
+      "preview_url" : "https://p.scdn.co/mp3-preview/d86a4087f1b4d102ca9825a38a3c7d10b314e650?cid=null",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:0ztZ65BrWKvcPuQPR6LTZw"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 259026,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2J8MwNEqmnhwbVQoqG7tnh"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2J8MwNEqmnhwbVQoqG7tnh",
+      "id" : "2J8MwNEqmnhwbVQoqG7tnh",
+      "name" : "Lost Somebody",
+      "preview_url" : "https://p.scdn.co/mp3-preview/2a115fb4b5eb2cf16fe13e9a90b4a8d616514a77?cid=null",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:2J8MwNEqmnhwbVQoqG7tnh"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 281613,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4Ek1h5KnIkB6Pi2Bt1lV8m"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4Ek1h5KnIkB6Pi2Bt1lV8m",
+      "id" : "4Ek1h5KnIkB6Pi2Bt1lV8m",
+      "name" : "Movin Backwards",
+      "preview_url" : "https://p.scdn.co/mp3-preview/4d63d9cf4dba6f709a7fe0666634ffdfdfbde1c7?cid=null",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:4Ek1h5KnIkB6Pi2Bt1lV8m"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 211986,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3MDcFMG1AYBPcRpYOdwDYl"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3MDcFMG1AYBPcRpYOdwDYl",
+      "id" : "3MDcFMG1AYBPcRpYOdwDYl",
+      "name" : "Conrad Tokyo",
+      "preview_url" : "https://p.scdn.co/mp3-preview/eed12d3467ac445899d6a7b02d7c54477f3e06ac?cid=null",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:3MDcFMG1AYBPcRpYOdwDYl"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 197440,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/51Ru43YjHNP2uLcPoswSu4"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/51Ru43YjHNP2uLcPoswSu4",
+      "id" : "51Ru43YjHNP2uLcPoswSu4",
+      "name" : "Ego",
+      "preview_url" : "https://p.scdn.co/mp3-preview/1db9227746ab4cfbe00f6cd20bdfc1df840d44b0?cid=null",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:51Ru43YjHNP2uLcPoswSu4"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+        "id" : "09hVIj6vWgoCDtT03h8ZCa",
+        "name" : "A Tribe Called Quest",
+        "type" : "artist",
+        "uri" : "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 322233,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0BXZq7Np5y2kWNyH6zbrAc"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0BXZq7Np5y2kWNyH6zbrAc",
+      "id" : "0BXZq7Np5y2kWNyH6zbrAc",
+      "name" : "The Donald",
+      "preview_url" : "https://p.scdn.co/mp3-preview/c9004dcbccd6c87763158b302dcf3ebd3d5dff49?cid=null",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:0BXZq7Np5y2kWNyH6zbrAc"
+    } ],
+    "limit" : 50,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 16
+  },
+  "type" : "album",
+  "uri" : "spotify:album:3WvQpufOsPzkZvcSuynCf3"
+}

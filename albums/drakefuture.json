@@ -1,0 +1,424 @@
+{
+  "album_type" : "album",
+  "artists" : [ {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+    },
+    "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+    "id" : "3TVXtAsR1Inumwj472S9r4",
+    "name" : "Drake",
+    "type" : "artist",
+    "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+    },
+    "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+    "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+    "name" : "Future",
+    "type" : "artist",
+    "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+  } ],
+  "available_markets" : [ "CA", "MX", "US" ],
+  "copyrights" : [ {
+    "text" : "(C) 2015 Cash Money Records Inc.",
+    "type" : "C"
+  }, {
+    "text" : "(P) 2015 Cash Money Records Inc.",
+    "type" : "P"
+  } ],
+  "external_ids" : {
+    "upc" : "00602547616685"
+  },
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/album/1ozpmkWcCHwsQ4QTnxOOdT"
+  },
+  "genres" : [ ],
+  "href" : "https://api.spotify.com/v1/albums/1ozpmkWcCHwsQ4QTnxOOdT",
+  "id" : "1ozpmkWcCHwsQ4QTnxOOdT",
+  "images" : [ {
+    "height" : 640,
+    "url" : "https://i.scdn.co/image/77b0c91524867cc72d1974f66ad8cd21d063a20e",
+    "width" : 640
+  }, {
+    "height" : 300,
+    "url" : "https://i.scdn.co/image/f2405b82d0578dd815a3082ca0f7ec4e18e937a1",
+    "width" : 300
+  }, {
+    "height" : 64,
+    "url" : "https://i.scdn.co/image/a5435bb3ab4fabe43bc7f7ce46a6c23aa30d8eae",
+    "width" : 64
+  } ],
+  "label" : "Cash Money Records Inc.",
+  "name" : "What A Time To Be Alive",
+  "popularity" : 76,
+  "release_date" : "2015-09-20",
+  "release_date_precision" : "day",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/albums/1ozpmkWcCHwsQ4QTnxOOdT/tracks?offset=0&limit=50",
+    "items" : [ {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+        "id" : "3TVXtAsR1Inumwj472S9r4",
+        "name" : "Drake",
+        "type" : "artist",
+        "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+        "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+        "name" : "Future",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "disc_number" : 1,
+      "duration_ms" : 231231,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0GR7iJLhj80KD5LkA14ZRn"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0GR7iJLhj80KD5LkA14ZRn",
+      "id" : "0GR7iJLhj80KD5LkA14ZRn",
+      "name" : "Digital Dash",
+      "preview_url" : "https://p.scdn.co/mp3-preview/bbe6e00d869c309fa6589a15f24cd359442b0108?cid=null",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:0GR7iJLhj80KD5LkA14ZRn"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+        "id" : "3TVXtAsR1Inumwj472S9r4",
+        "name" : "Drake",
+        "type" : "artist",
+        "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+        "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+        "name" : "Future",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "disc_number" : 1,
+      "duration_ms" : 217706,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7jslhIiELQkgW9IHeYNOWE"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7jslhIiELQkgW9IHeYNOWE",
+      "id" : "7jslhIiELQkgW9IHeYNOWE",
+      "name" : "Big Rings",
+      "preview_url" : "https://p.scdn.co/mp3-preview/acef6dfb5f2a5fcc4c8bbbc07905d129604fa883?cid=null",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:7jslhIiELQkgW9IHeYNOWE"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+        "id" : "3TVXtAsR1Inumwj472S9r4",
+        "name" : "Drake",
+        "type" : "artist",
+        "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+        "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+        "name" : "Future",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "disc_number" : 1,
+      "duration_ms" : 211642,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2uTG00P1DkhB97pdITkl2O"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2uTG00P1DkhB97pdITkl2O",
+      "id" : "2uTG00P1DkhB97pdITkl2O",
+      "name" : "Live From The Gutter",
+      "preview_url" : "https://p.scdn.co/mp3-preview/a79d96cb7b0c2a20d1d3db2c6b2c15ea50f44004?cid=null",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:2uTG00P1DkhB97pdITkl2O"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+        "id" : "3TVXtAsR1Inumwj472S9r4",
+        "name" : "Drake",
+        "type" : "artist",
+        "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+        "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+        "name" : "Future",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "disc_number" : 1,
+      "duration_ms" : 314631,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2AGottAzfC8bHzF7kEJ3Wa"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2AGottAzfC8bHzF7kEJ3Wa",
+      "id" : "2AGottAzfC8bHzF7kEJ3Wa",
+      "name" : "Diamonds Dancing",
+      "preview_url" : "https://p.scdn.co/mp3-preview/6cba94ed2f31914205e221ad4f471c63121acf55?cid=null",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:2AGottAzfC8bHzF7kEJ3Wa"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+        "id" : "3TVXtAsR1Inumwj472S9r4",
+        "name" : "Drake",
+        "type" : "artist",
+        "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+        "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+        "name" : "Future",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "disc_number" : 1,
+      "duration_ms" : 209287,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0B5OTb36fzLayn6XQHg5A1"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0B5OTb36fzLayn6XQHg5A1",
+      "id" : "0B5OTb36fzLayn6XQHg5A1",
+      "name" : "Scholarships",
+      "preview_url" : "https://p.scdn.co/mp3-preview/c73b133a291b9f5b7e364065cc8776d452acf88f?cid=null",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:0B5OTb36fzLayn6XQHg5A1"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+        "id" : "3TVXtAsR1Inumwj472S9r4",
+        "name" : "Drake",
+        "type" : "artist",
+        "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+        "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+        "name" : "Future",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "disc_number" : 1,
+      "duration_ms" : 202084,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/76kyKtPLsFbQkdQ86QrkF4"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/76kyKtPLsFbQkdQ86QrkF4",
+      "id" : "76kyKtPLsFbQkdQ86QrkF4",
+      "name" : "Plastic Bag",
+      "preview_url" : "https://p.scdn.co/mp3-preview/c88bd82795998f5ffd317ebff89d67c0ca503a1f?cid=null",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:76kyKtPLsFbQkdQ86QrkF4"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+        "id" : "3TVXtAsR1Inumwj472S9r4",
+        "name" : "Drake",
+        "type" : "artist",
+        "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+        "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+        "name" : "Future",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "disc_number" : 1,
+      "duration_ms" : 180000,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6bqtKURdSWkInAJHDkuaL0"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6bqtKURdSWkInAJHDkuaL0",
+      "id" : "6bqtKURdSWkInAJHDkuaL0",
+      "name" : "I'm The Plug",
+      "preview_url" : "https://p.scdn.co/mp3-preview/6e6d95cbb47f76cf8f05ef1628398ff3f427c047?cid=null",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:6bqtKURdSWkInAJHDkuaL0"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+        "id" : "3TVXtAsR1Inumwj472S9r4",
+        "name" : "Drake",
+        "type" : "artist",
+        "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+        "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+        "name" : "Future",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "disc_number" : 1,
+      "duration_ms" : 220862,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4gowy3WT6D1yhMLgRBlf9C"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4gowy3WT6D1yhMLgRBlf9C",
+      "id" : "4gowy3WT6D1yhMLgRBlf9C",
+      "name" : "Change Locations",
+      "preview_url" : "https://p.scdn.co/mp3-preview/cc8b7ea2222bacb63c347ea977f37646eb6ac395?cid=null",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:4gowy3WT6D1yhMLgRBlf9C"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+        "id" : "3TVXtAsR1Inumwj472S9r4",
+        "name" : "Drake",
+        "type" : "artist",
+        "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+        "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+        "name" : "Future",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "disc_number" : 1,
+      "duration_ms" : 205879,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/27GmP9AWRs744SzKcpJsTZ"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/27GmP9AWRs744SzKcpJsTZ",
+      "id" : "27GmP9AWRs744SzKcpJsTZ",
+      "name" : "Jumpman",
+      "preview_url" : "https://p.scdn.co/mp3-preview/4f3e954bb232a96c196389017d961016c8cbd7fc?cid=null",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:27GmP9AWRs744SzKcpJsTZ"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+        "id" : "1RyvyyTE3xzB2ZywiAwp0i",
+        "name" : "Future",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "disc_number" : 1,
+      "duration_ms" : 188702,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2ACys0pX0SjmpQmQWzp7wt"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2ACys0pX0SjmpQmQWzp7wt",
+      "id" : "2ACys0pX0SjmpQmQWzp7wt",
+      "name" : "Jersey",
+      "preview_url" : "https://p.scdn.co/mp3-preview/ceb4572705aacf3349647226b48e77392ca2f648?cid=null",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:2ACys0pX0SjmpQmQWzp7wt"
+    }, {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+        "id" : "3TVXtAsR1Inumwj472S9r4",
+        "name" : "Drake",
+        "type" : "artist",
+        "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+      } ],
+      "available_markets" : [ "CA", "MX", "US" ],
+      "disc_number" : 1,
+      "duration_ms" : 253934,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1DmnEYXa4WfbdhAPwNzgD8"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1DmnEYXa4WfbdhAPwNzgD8",
+      "id" : "1DmnEYXa4WfbdhAPwNzgD8",
+      "name" : "30 for 30 Freestyle",
+      "preview_url" : "https://p.scdn.co/mp3-preview/59b79df5cc2ef2c1a153c9115de8a8466f8eea0d?cid=null",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:1DmnEYXa4WfbdhAPwNzgD8"
+    } ],
+    "limit" : 50,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 11
+  },
+  "type" : "album",
+  "uri" : "spotify:album:1ozpmkWcCHwsQ4QTnxOOdT"
+}
